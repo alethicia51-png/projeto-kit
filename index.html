@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIT | Cosméticos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="#inicio" class="logo">
+        KIT
+    </a>
+
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#pele">Descubra sua pele</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre nós</a>
+    </nav>
+
+    <button class="carrinho" id="abrirCarrinho" type="button">
+        🛒
+        <span id="contadorCarrinho">0</span>
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- BANNER -->
+
+    <section id="inicio" class="banner">
+
+        <div class="banner-texto">
+
+            <span class="tag-banner">
+                ✨ Beleza que combina com você
+            </span>
+
+            <h1>
+                Descubra o cuidado
+                ideal para sua pele
+            </h1>
+
+            <p>
+                Responda nosso teste rápido e descubra
+                quais produtos combinam melhor com
+                as características da sua pele.
+            </p>
+
+            <a href="#pele" class="botao">
+                Descobrir meu tipo de pele
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+
+    <section id="pele" class="questionario">
+
+        <div class="titulo-secao">
+
+            <span class="tag">
+                TESTE DE PELE
+            </span>
+
+            <h2>
+                ✨ Descubra seu tipo de pele
+            </h2>
+
+            <p>
+                Responda às perguntas abaixo e descubra
+                quais cuidados podem combinar melhor
+                com sua pele.
+            </p>
+
+        </div>
+
+
+        <form id="formularioPele">
+
+            <div class="pergunta">
+
+                <span class="numero-pergunta">01</span>
+
+                <h3>
+                    Como sua pele costuma ficar algumas
+                    horas depois de lavar o rosto?
+                </h3>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="oleosa" required>
+                    <span>Muito brilhante e oleosa</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="seca">
+                    <span>Ressecada ou repuxando</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="mista">
+                    <span>Oleosa em algumas regiões e seca em outras</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="normal">
+                    <span>Confortável e equilibrada</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="sensivel">
+                    <span>Sensível, irritada ou avermelhada</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta1" value="desidratada">
+                    <span>Com sensação de falta de água</span>
+                </label>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <span class="numero-pergunta">02</span>
+
+                <h3>
+                    Como você percebe seus poros?
+                </h3>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="oleosa" required>
+                    <span>Grandes e bastante visíveis</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="seca">
+                    <span>Pequenos e pouco visíveis</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="mista">
+                    <span>Mais visíveis na zona T</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="normal">
+                    <span>Pouco visíveis</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="sensivel">
+                    <span>Normais, mas a pele fica facilmente irritada</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta2" value="desidratada">
+                    <span>Pouco visíveis, mas com aparência opaca</span>
+                </label>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <span class="numero-pergunta">03</span>
+
+                <h3>
+                    Sua pele costuma apresentar espinhas?
+                </h3>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="acneica" required>
+                    <span>Sim, com bastante frequência</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="oleosa">
+                    <span>Algumas vezes</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="mista">
+                    <span>Principalmente na zona T</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="normal">
+                    <span>Raramente</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="seca">
+                    <span>Praticamente nunca</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta3" value="sensivel">
+                    <span>Raramente, mas minha pele reage facilmente</span>
+                </label>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <span class="numero-pergunta">04</span>
+
+                <h3>
+                    Como sua pele se sente durante o dia?
+                </h3>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="oleosa" required>
+                    <span>Muito oleosa</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="seca">
+                    <span>Ressecada</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="mista">
+                    <span>Oleosa na testa e nariz, mas seca nas bochechas</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="normal">
+                    <span>Equilibrada</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="sensivel">
+                    <span>Irritada ou avermelhada com facilidade</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta4" value="desidratada">
+                    <span>Com sensação de repuxamento, mesmo com oleosidade</span>
+                </label>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <span class="numero-pergunta">05</span>
+
+                <h3>
+                    Como sua pele reage a novos produtos?
+                </h3>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="sensivel" required>
+                    <span>Fica vermelha ou irritada facilmente</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="normal">
+                    <span>Normalmente não apresenta problemas</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="oleosa">
+                    <span>Pode aumentar a oleosidade</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="seca">
+                    <span>Pode causar mais ressecamento</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="acneica">
+                    <span>Alguns produtos podem causar espinhas</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pergunta5" value="desidratada">
+                    <span>Minha pele continua com aparência opaca</span>
+                </label>
+
+            </div>
+
+
+            <button type="submit" class="botao resultado-btn">
+                Ver meu resultado ✨
+            </button>
+
+        </form>
+
+
+        <div id="resultado" class="resultado"></div>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+
+    <section id="produtos" class="produtos">
+
+        <div class="titulo-secao">
+
+            <span class="tag">
+                NOSSA LOJA
+            </span>
+
+            <h2>
+                🛍️ Produtos em destaque
+            </h2>
+
+            <p>
+                Confira nossos produtos de beleza.
+            </p>
+
+        </div>
+
+
+        <div class="produtos-container">
+
+
+            <article class="produto">
+
+                <div class="produto-imagem">
+                    <img src="seruns.png" alt="Sérum facial">
+                </div>
+
+                <h3>Sérum Facial</h3>
+
+                <p>
+                    Cuidado especial para uma pele hidratada
+                    e iluminada.
+                </p>
+
+                <span class="preco">
+                    R$ 49,90
+                </span>
+
+                <button class="btn-comprar" data-produto="Sérum Facial">
+                    Adicionar ao carrinho
+                </button>
+
+            </article>
+
+
+            <article class="produto">
+
+                <div class="produto-imagem">
+                    <img src="pó.png" alt="Pó facial">
+                </div>
+
+                <h3>Pó Facial</h3>
+
+                <p>
+                    Acabamento uniforme para completar
+                    sua maquiagem.
+                </p>
+
+                <span class="preco">
+                    R$ 39,90
+                </span>
+
+                <button class="btn-comprar" data-produto="Pó Facial">
+                    Adicionar ao carrinho
+                </button>
+
+            </article>
+
+
+            <article class="produto">
+
+                <div class="produto-imagem">
+                    <img src="base.png" alt="Base facial">
+                </div>
+
+                <h3>Base Facial</h3>
+
+                <p>
+                    Cobertura bonita e uniforme para
+                    valorizar sua maquiagem.
+                </p>
+
+                <span class="preco">
+                    R$ 54,90
+                </span>
+
+                <button class="btn-comprar" data-produto="Base Facial">
+                    Adicionar ao carrinho
+                </button>
+
+            </article>
+
+
+            <article class="produto">
+
+                <div class="produto-imagem">
+                    <img src="blush.png" alt="Blush">
+                </div>
+
+                <h3>Blush</h3>
+
+                <p>
+                    Um toque de cor para deixar seu visual
+                    ainda mais bonito.
+                </p>
+
+                <span class="preco">
+                    R$ 34,90
+                </span>
+
+                <button class="btn-comprar" data-produto="Blush">
+                    Adicionar ao carrinho
+                </button>
+
+            </article>
+
+
+            <article class="produto">
+
+                <div class="produto-imagem">
+                    <img src="cilios.png" alt="Máscara de cílios">
+                </div>
+
+                <h3>Máscara de Cílios</h3>
+
+                <p>
+                    Realce seus cílios e destaque ainda
+                    mais o seu olhar.
+                </p>
+
+                <span class="preco">
+                    R$ 29,90
+                </span>
+
+                <button class="btn-comprar" data-produto="Máscara de Cílios">
+                    Adicionar ao carrinho
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+
+    <section id="sobre" class="sobre">
+
+        <span class="tag">
+            SOBRE A KIT
+        </span>
+
+        <h2>
+            Beleza de um jeito simples
+        </h2>
+
+        <p>
+            A KIT é uma loja dedicada a oferecer produtos
+            de beleza e cuidados pessoais, ajudando nossas
+            clientes a encontrar produtos que combinem com
+            suas necessidades.
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- MODAL DO CARRINHO -->
+
+<div id="modalCarrinho" class="modal">
+
+    <div class="modal-conteudo">
+
+        <button id="fecharCarrinho" class="fechar" type="button">
+            ×
+        </button>
+
+        <h2>
+            🛒 Seu carrinho
+        </h2>
+
+        <div id="listaCarrinho">
+            <p class="carrinho-vazio">
+                Seu carrinho está vazio.
+            </p>
+        </div>
+
+        <div class="total-carrinho">
+            Total:
+            <strong id="totalCarrinho">
+                R$ 0,00
+            </strong>
+        </div>
+
+        <button id="finalizarCompra" class="botao" type="button">
+            Finalizar compra
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 KIT - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
