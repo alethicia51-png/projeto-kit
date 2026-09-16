@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         alert(
-            "Compra iniciada! Obrigado por escolher a KIT 💕"
+            "Compra finalizada! Obrigado por comprar na KIT 💕"
         );
 
     });
