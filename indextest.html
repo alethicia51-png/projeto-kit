@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIT | Cosméticos</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CONFIGURAÇÃO DO BANNER -->
+    <style>
+        .banner {
+            position: relative;
+            min-height: 540px;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 252, 246, 0.35),
+                    rgba(255, 252, 246, 0.35)
+                ),
+                url("kit-cosmetics.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .banner-texto {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            KIT
+        </a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#pele">Descubra sua pele</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+
+        <button
+            class="carrinho"
+            id="abrirCarrinho"
+            type="button"
+        >
+            🛒
+            <span id="contadorCarrinho">0</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- ======================================
+             BANNER PRINCIPAL
+        ======================================= -->
+
+        <section id="inicio" class="banner">
+
+            <div class="banner-texto">
+
+                <span class="tag-banner">
+                    Beleza que combina com você
+                </span>
+
+                <h1>
+                    Descubra o cuidado
+                    ideal para sua pele
+                </h1>
+
+                <p>
+                    Responda nosso teste rápido e descubra
+                    quais produtos combinam melhor com
+                    as características da sua pele.
+                </p>
+
+                <a href="#pele" class="botao">
+                    Descobrir meu tipo de pele
+                </a>
+
+            </div>
+
+        </section>
+
+
+       <!-- ======================================
+             QUIZ DE TIPO DE PELE
+======================================= -->
+
+<section id="pele" class="questionario">
+
+    <div class="titulo-secao">
+
+        <span class="tag">
+            TESTE DE PELE
+        </span>
+
+        <h2>
+            Descubra seu tipo de pele
+        </h2>
+
+        <p>
+            Responda às perguntas com base em como sua pele
+            costuma se comportar naturalmente.
+        </p>
+
+    </div>
+
+
+    <form id="formularioPele">
+
+
+        <!-- ======================================
+                    PERGUNTA 01
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                01
+            </span>
+
+            <h3>
+                Depois de lavar o rosto com um sabonete
+                suave e não aplicar nenhum produto,
+                como sua pele costuma ficar após cerca
+                de 30 minutos?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta1" value="muito-oleosa" required>
+                <span>
+                    Fica muito brilhante e com bastante oleosidade
+                    em praticamente todo o rosto.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta1" value="oleosa">
+                <span>
+                    Começa a apresentar brilho e oleosidade,
+                    principalmente na testa, nariz e queixo.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta1" value="mista">
+                <span>
+                    A zona T começa a ficar oleosa, enquanto
+                    as bochechas permanecem normais ou secas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta1" value="normal">
+                <span>
+                    Fica confortável, macia e equilibrada,
+                    sem excesso de brilho ou ressecamento.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta1" value="seca">
+                <span>
+                    Fica levemente repuxada, áspera ou com
+                    pouca oleosidade.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta1" value="muito-seca">
+                <span>
+                    Fica bastante repuxada, desconfortável
+                    e às vezes apresenta descamação.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 02
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                02
+            </span>
+
+            <h3>
+                Como sua pele costuma ficar no final
+                de um dia normal?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta2" value="muito-oleosa" required>
+                <span>
+                    Muito brilhante e oleosa em quase todo
+                    o rosto.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta2" value="oleosa">
+                <span>
+                    Com bastante brilho, principalmente
+                    na região da testa, nariz e queixo.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta2" value="mista">
+                <span>
+                    A zona T fica oleosa, mas as bochechas
+                    continuam normais ou ressecadas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta2" value="normal">
+                <span>
+                    Continua relativamente equilibrada
+                    durante todo o dia.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta2" value="seca">
+                <span>
+                    Fica com aparência mais opaca e
+                    apresenta pouco brilho.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta2" value="muito-seca">
+                <span>
+                    Fica muito opaca, áspera ou com áreas
+                    descamando.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 03
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                03
+            </span>
+
+            <h3>
+                Como você descreveria o tamanho e a
+                aparência dos seus poros?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta3" value="muito-oleosa" required>
+                <span>
+                    Muito aparentes e visíveis em várias
+                    regiões do rosto.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta3" value="oleosa">
+                <span>
+                    Visíveis principalmente na zona T.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta3" value="mista">
+                <span>
+                    Mais aparentes no nariz e na testa,
+                    mas menores nas bochechas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta3" value="normal">
+                <span>
+                    Pequenos ou moderadamente visíveis.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta3" value="seca">
+                <span>
+                    Geralmente pequenos e pouco aparentes.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta3" value="muito-seca">
+                <span>
+                    Muito pequenos e quase imperceptíveis,
+                    principalmente por causa do ressecamento.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 04
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                04
+            </span>
+
+            <h3>
+                Com que frequência você percebe excesso
+                de oleosidade no rosto?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta4" value="muito-oleosa" required>
+                <span>
+                    Praticamente todos os dias e em quase
+                    todo o rosto.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta4" value="oleosa">
+                <span>
+                    Frequentemente, principalmente na zona T.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta4" value="mista">
+                <span>
+                    Principalmente na testa, nariz e queixo.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta4" value="normal">
+                <span>
+                    Poucas vezes e normalmente em situações
+                    específicas, como calor.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta4" value="seca">
+                <span>
+                    Raramente percebo oleosidade.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta4" value="muito-seca">
+                <span>
+                    Quase nunca percebo oleosidade.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 05
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                05
+            </span>
+
+            <h3>
+                Como suas bochechas costumam se comportar
+                durante o dia?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta5" value="muito-oleosa" required>
+                <span>
+                    Ficam bastante oleosas e brilhantes.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta5" value="oleosa">
+                <span>
+                    Apresentam alguma oleosidade.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta5" value="mista">
+                <span>
+                    Permanecem mais secas ou equilibradas
+                    enquanto a zona T fica oleosa.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta5" value="normal">
+                <span>
+                    Permanecem confortáveis e equilibradas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta5" value="seca">
+                <span>
+                    Podem ficar um pouco secas ou ásperas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta5" value="muito-seca">
+                <span>
+                    Ficam frequentemente muito secas,
+                    ásperas ou descamando.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 06
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                06
+            </span>
+
+            <h3>
+                Como sua pele reage quando você passa
+                algumas horas sem usar hidratante?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta6" value="muito-oleosa" required>
+                <span>
+                    Continua confortável, mas fica bastante
+                    oleosa e brilhante.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta6" value="oleosa">
+                <span>
+                    Fica oleosa, especialmente na zona T.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta6" value="mista">
+                <span>
+                    Algumas áreas ficam oleosas e outras
+                    começam a ficar desconfortáveis.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta6" value="normal">
+                <span>
+                    Continua confortável e equilibrada.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta6" value="seca">
+                <span>
+                    Começa a apresentar repuxamento
+                    e ressecamento.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta6" value="muito-seca">
+                <span>
+                    Fica muito desconfortável, áspera
+                    e bastante repuxada.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 07
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                07
+            </span>
+
+            <h3>
+                Como sua pele costuma reagir em dias
+                muito quentes?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta7" value="muito-oleosa" required>
+                <span>
+                    Produz muita oleosidade e fica bastante
+                    brilhante.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta7" value="oleosa">
+                <span>
+                    Fica mais oleosa do que o normal.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta7" value="mista">
+                <span>
+                    A zona T fica bastante oleosa, mas
+                    outras regiões permanecem secas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta7" value="normal">
+                <span>
+                    Fica um pouco mais brilhante, mas
+                    continua relativamente equilibrada.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta7" value="seca">
+                <span>
+                    Continua com pouca oleosidade.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta7" value="muito-seca">
+                <span>
+                    Continua muito seca e pode apresentar
+                    desconforto.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 08
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                08
+            </span>
+
+            <h3>
+                Quando você usa um produto muito hidratante,
+                como sua pele costuma reagir?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta8" value="muito-oleosa" required>
+                <span>
+                    Fica imediatamente pesada, brilhante
+                    e muito oleosa.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta8" value="oleosa">
+                <span>
+                    Fica mais brilhante e oleosa que o normal.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta8" value="mista">
+                <span>
+                    Algumas regiões ficam hidratadas, mas
+                    a zona T pode ficar oleosa.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta8" value="normal">
+                <span>
+                    Fica confortável e bem hidratada.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta8" value="seca">
+                <span>
+                    Minha pele geralmente gosta e fica
+                    mais confortável.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta8" value="muito-seca">
+                <span>
+                    Minha pele absorve rapidamente e continua
+                    pedindo hidratação.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 09
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                09
+            </span>
+
+            <h3>
+                Como sua pele costuma ficar durante o
+                inverno ou em ambientes muito secos?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta9" value="muito-oleosa" required>
+                <span>
+                    Continua bastante oleosa.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta9" value="oleosa">
+                <span>
+                    Continua oleosa, embora produza um pouco
+                    menos de sebo.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta9" value="mista">
+                <span>
+                    Algumas áreas ficam secas enquanto
+                    a zona T continua oleosa.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta9" value="normal">
+                <span>
+                    Fica um pouco mais seca, mas sem
+                    grandes desconfortos.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta9" value="seca">
+                <span>
+                    Fica mais seca, áspera e repuxada.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta9" value="muito-seca">
+                <span>
+                    Fica extremamente seca, sensível e pode
+                    apresentar descamação.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 10
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                10
+            </span>
+
+            <h3>
+                Com que frequência você sente que precisa
+                retirar a oleosidade do rosto?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta10" value="muito-oleosa" required>
+                <span>
+                    Várias vezes ao dia.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta10" value="oleosa">
+                <span>
+                    Uma ou algumas vezes durante o dia.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta10" value="mista">
+                <span>
+                    Principalmente na zona T.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta10" value="normal">
+                <span>
+                    Quase nunca.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta10" value="seca">
+                <span>
+                    Praticamente nunca.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta10" value="muito-seca">
+                <span>
+                    Nunca sinto necessidade de retirar
+                    oleosidade.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 11
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                11
+            </span>
+
+            <h3>
+                Como sua pele costuma se comportar quando
+                você usa maquiagem por várias horas?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta11" value="muito-oleosa" required>
+                <span>
+                    A maquiagem fica muito brilhante e
+                    começa a sair por causa da oleosidade.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta11" value="oleosa">
+                <span>
+                    A zona T fica brilhante e precisa
+                    de retoques.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta11" value="mista">
+                <span>
+                    A maquiagem dura bem em algumas áreas,
+                    mas fica oleosa na zona T e mais seca
+                    nas bochechas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta11" value="normal">
+                <span>
+                    A maquiagem costuma permanecer
+                    relativamente uniforme.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta11" value="seca">
+                <span>
+                    A maquiagem pode marcar áreas secas
+                    ou pequenas linhas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta11" value="muito-seca">
+                <span>
+                    A maquiagem evidencia bastante o
+                    ressecamento e a descamação.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    PERGUNTA 12
+        ======================================= -->
+
+        <div class="pergunta">
+
+            <span class="numero-pergunta">
+                12
+            </span>
+
+            <h3>
+                Se você tivesse que escolher uma única
+                característica que mais representa sua pele,
+                qual seria?
+            </h3>
+
+            <label>
+                <input type="radio" name="pergunta12" value="muito-oleosa" required>
+                <span>
+                    Produção intensa de oleosidade e brilho.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta12" value="oleosa">
+                <span>
+                    Oleosidade frequente, principalmente
+                    na zona T.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta12" value="mista">
+                <span>
+                    Diferença clara entre uma zona T oleosa
+                    e outras áreas mais secas.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta12" value="normal">
+                <span>
+                    Equilíbrio entre oleosidade, hidratação
+                    e conforto.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta12" value="seca">
+                <span>
+                    Pouca oleosidade e tendência ao
+                    ressecamento.
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="pergunta12" value="muito-seca">
+                <span>
+                    Ressecamento intenso, repuxamento e
+                    possível descamação.
+                </span>
+            </label>
+
+        </div>
+
+
+        <!-- ======================================
+                    BOTÃO DE RESULTADO
+        ======================================= -->
+
+        <button
+            type="submit"
+            class="botao-resultado"
+        >
+            Descobrir meu tipo de pele
+        </button>
+
+    </form>
+
+
+    <!-- ======================================
+                    RESULTADO
+    ======================================= -->
+
+    <div
+        id="resultadoPele"
+        class="resultado-pele"
+        style="display: none;"
+    >
+
+        <span class="tag">
+            SEU RESULTADO
+        </span>
+
+        <h2 id="tituloResultado">
+            Seu tipo de pele
+        </h2>
+
+        <p id="textoResultado">
+            Seu resultado aparecerá aqui.
+        </p>
+
+
+        <!-- BOTÃO PARA REFAZER -->
+
+        <button
+            type="button"
+            id="reiniciarQuiz"
+            class="botao-reiniciar"
+        >
+            Não gostei do resultado — refazer teste
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================
+             JAVASCRIPT
+======================================= -->
+
+<script>
+
+const formulario = document.getElementById("formularioPele");
+
+const resultado = document.getElementById("resultadoPele");
+
+const tituloResultado = document.getElementById("tituloResultado");
+
+const textoResultado = document.getElementById("textoResultado");
+
+const botaoReiniciar = document.getElementById("reiniciarQuiz");
+
+
+
+/* ======================================
+        RESULTADOS
+====================================== */
+
+const resultados = {
+
+    "muito-oleosa": {
+
+        titulo: "Pele Muito Oleosa",
+
+        texto:
+        "Suas respostas indicam uma tendência forte à produção de oleosidade. Sua pele pode apresentar bastante brilho, poros mais aparentes e necessidade frequente de controlar o excesso de sebo."
+
+    },
+
+
+    "oleosa": {
+
+        titulo: "Pele Oleosa",
+
+        texto:
+        "Suas respostas indicam uma pele com produção de oleosidade acima do equilíbrio, especialmente durante o dia e na região da zona T. Uma rotina equilibrada pode ajudar a controlar o brilho sem ressecar a pele."
+
+    },
+
+
+    "mista": {
+
+        titulo: "Pele Mista",
+
+        texto:
+        "Suas respostas indicam diferenças entre as regiões do rosto. A zona T tende a apresentar mais oleosidade, enquanto as bochechas podem ser normais ou apresentar ressecamento."
+
+    },
+
+
+    "normal": {
+
+        titulo: "Pele Normal",
+
+        texto:
+        "Suas respostas indicam uma pele relativamente equilibrada, com boa relação entre oleosidade, hidratação e conforto. Pequenas alterações podem acontecer dependendo do clima e da rotina."
+
+    },
+
+
+    "seca": {
+
+        titulo: "Pele Seca",
+
+        texto:
+        "Suas respostas indicam uma pele com baixa produção de oleosidade e maior tendência ao ressecamento. Sensação de repuxamento e aspereza podem aparecer, especialmente após lavar o rosto."
+
+    },
+
+
+    "muito-seca": {
+
+        titulo: "Pele Muito Seca",
+
+        texto:
+        "Suas respostas indicam uma tendência intensa ao ressecamento, com possibilidade de repuxamento, aspereza e descamação. Uma rotina de cuidados voltada para hidratação e proteção da barreira da pele pode ser especialmente importante."
+
+    }
+
+};
+
+
+
+/* ======================================
+        ENVIAR QUIZ
+====================================== */
+
+formulario.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    /*
+        Cria a pontuação inicial
+        para cada tipo de pele.
+    */
+
+    const pontos = {
+
+        "muito-oleosa": 0,
+
+        "oleosa": 0,
+
+        "mista": 0,
+
+        "normal": 0,
+
+        "seca": 0,
+
+        "muito-seca": 0
+
+    };
+
+
+    /*
+        Pega todas as respostas
+        selecionadas pelo usuário.
+    */
+
+    const respostas = formulario.querySelectorAll(
+        'input[type="radio"]:checked'
+    );
+
+
+    /*
+        Adiciona 1 ponto para
+        cada resposta.
+    */
+
+    respostas.forEach(function(resposta) {
+
+        if (pontos[resposta.value] !== undefined) {
+
+            pontos[resposta.value]++;
+
+        }
+
+    });
+
+
+    /*
+        Descobre qual tipo de pele
+        recebeu mais pontos.
+    */
+
+    let tipoPele = "normal";
+
+    let maiorPontuacao = -1;
+
+
+    for (const tipo in pontos) {
+
+        if (pontos[tipo] > maiorPontuacao) {
+
+            maiorPontuacao = pontos[tipo];
+
+            tipoPele = tipo;
+
+        }
+
+    }
+
+
+    /*
+        Coloca o resultado na tela.
+    */
+
+    tituloResultado.textContent =
+        resultados[tipoPele].titulo;
+
+
+    textoResultado.textContent =
+        resultados[tipoPele].texto;
+
+
+    /*
+        Esconde as perguntas.
+    */
+
+    formulario.style.display = "none";
+
+
+    /*
+        Mostra o resultado.
+    */
+
+    resultado.style.display = "block";
+
+
+    /*
+        Leva o usuário até o resultado.
+    */
+
+    resultado.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "center"
+
+    });
+
+});
+
+
+
+/* ======================================
+        REINICIAR QUIZ
+====================================== */
+
+botaoReiniciar.addEventListener("click", function() {
+
+
+    /*
+        Apaga todas as respostas
+        selecionadas.
+    */
+
+    formulario.reset();
+
+
+    /*
+        Esconde o resultado.
+    */
+
+    resultado.style.display = "none";
+
+
+    /*
+        Mostra novamente todas
+        as perguntas.
+    */
+
+    formulario.style.display = "block";
+
+
+    /*
+        Volta para o começo
+        do questionário.
+    */
+
+    formulario.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "start"
+
+    });
+
+});
+
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    type="submit"
+                    class="botao resultado-btn"
+                >
+                                    Ver meu resultado 
+                </button>
+
+            </form>
+
+
+            <div
+                id="resultado"
+                class="resultado"
+            ></div>
+
+        </section>
+
+
+        <!-- ======================================
+             PRODUTOS
+        ======================================= -->
+
+        <section
+            id="produtos"
+            class="produtos"
+        >
+
+            <div class="titulo-secao">
+
+                <span class="tag">
+                     PRODUTOS
+                </span>
+
+                <h2>
+                    🛍️ Produtos em destaque
+                </h2>
+
+                <p>
+                    Confira nossos produtos de beleza.
+                </p>
+
+            </div>
+
+
+            <div class="produtos-container">
+
+
+                <!-- SÉRUM -->
+
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="seruns.png"
+                            alt="Sérum facial"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Sérum Facial
+                    </h3>
+
+                    <p>
+                        Ajuda a hidratar, nutrir e cuidar da pele, deixando-a mais viçosa, uniforme e saudável
+                    </p>
+
+                    <span class="preco">
+                        R$ 49,90
+                    </span>
+
+                    <button
+                        class="btn-comprar"
+                        data-produto="Sérum Facial"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                </article>
+
+
+                <!-- PÓ Compacto -->
+
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="pó.png"
+                            alt="Pó facial"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Pó Facial
+                    </h3>
+
+                    <p>
+                         Ajuda a selar a maquiagem, controlar a oleosidade e deixar a pele mais uniforme e aveludada.
+                    </p>
+
+                    <span class="preco">
+                        R$ 39,90
+                    </span>
+
+                    <button
+                        class="btn-comprar"
+                        data-produto="Pó Facial"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                </article>
+
+
+                <!-- BASE LIQUIDA -->
+
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="base.png"
+                            alt="Base facial"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Base liquida
+                    </h3>
+
+                    <p>
+                        Ajuda a uniformizar o tom da pele e disfarçar pequenas imperfeições, deixando a pele mais bonita e radiante.
+                    </p>
+
+                    <span class="preco">
+                        R$ 54,90
+                    </span>
+
+                    <button
+                        class="btn-comprar"
+                        data-produto="Base Facial"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                </article>
+
+
+                <!-- BLUSH -->
+
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="blush.png"
+                            alt="Blush"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Blush
+                    </h3>
+
+                    <p>
+                      Ajuda a dár um toque de cor e vida ao rosto, deixando a maquiagem mais delicada, saudável e radiante.
+                    </p>
+
+                    <span class="preco">
+                        R$ 34,90
+                    </span>
+
+                    <button
+                        class="btn-comprar"
+                        data-produto="Blush"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                </article>
+
+
+                <!-- MÁSCARA DE CÍLIOS -->
+
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="cilios.png"
+                            alt="Máscara de cílios"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Máscara de Cílios
+                    </h3>
+
+                    <p>
+                    Ajuda alongar, definir e dar volume aos cílios, deixando o olhar mais marcante e encantador. 
+                    </p>
+
+                    <span class="preco">
+                        R$ 29,90
+                    </span>
+
+                    <button
+                        class="btn-comprar"
+                        data-produto="Máscara de Cílios"
+                    >
+                        Adicionar ao carrinho
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             SOBRE
+        ======================================= -->
+
+        <section
+            id="sobre"
+            class="sobre"
+        >
+
+            <span class="tag">
+                SOBRE A KIT
+            </span>
+
+            <h2>
+                Beleza de um jeito simples
+            </h2>
+
+            <p>
+             A KIT é uma loja dedicada à beleza e aos cuidados pessoais, oferecendo produtos selecionados para atender às diferentes necessidades de nossas clientes. Nosso objetivo é proporcionar uma experiência especial, ajudando cada pessoa a encontrar produtos que valorizem sua beleza e bem-estar.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================
+         MODAL DO CARRINHO
+    ======================================= -->
+
+    <div
+        id="modalCarrinho"
+        class="modal"
+    >
+
+        <div class="modal-conteudo">
+
+            <button
+                id="fecharCarrinho"
+                class="fechar"
+                type="button"
+            >
+                ×
+            </button>
+
+            <h2>
+                🛒 Seu carrinho
+            </h2>
+
+            <div id="listaCarrinho">
+
+                <p class="carrinho-vazio">
+                    Seu carrinho está vazio.
+                </p>
+
+            </div>
+
+            <div class="total-carrinho">
+
+                Total:
+
+                <strong id="totalCarrinho">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <button
+                id="finalizarCompra"
+                class="botao"
+                type="button"
+            >
+                Finalizar compra
+            </button>
+
+        </div>

@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     /* ========================================
@@ -281,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         alert(
-            "Compra finalizada! Obrigado por comprar na KIT 💕"
+            "Compra finalizada! Obrigado por comprar na KIT "
         );
 
     });
