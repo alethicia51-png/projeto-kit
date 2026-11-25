@@ -57,22 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
             oleosa: {
                 nome: "Pele Oleosa",
-                texto: "Sua pele tende a apresentar mais oleosidade e brilho. Produtos leves e cuidados com controle de oleosidade podem combinar melhor com sua rotina."
+                texto: "Sua pele tende a apresentar mais brilho e oleosidade. Produtos leves como o Sabonete Fresh pode ajudar com controle da oleosidade dando um toque seco e suave para a pele."
             },
 
             seca: {
                 nome: "Pele Seca",
-                texto: "Sua pele tende a apresentar ressecamento e sensação de repuxamento. Uma rotina focada em hidratação e nutrição pode ser interessante."
+                texto: "Sua pele tende a apresentar ressecamento e sensação de repuxamento. Uma rotina focada em hidratação e nutrição do Hidratante Skin dando um brilho leve e toque sedoso"
             },
 
             mista: {
                 nome: "Pele Mista",
-                texto: "Sua pele apresenta características diferentes em regiões distintas. Produtos equilibrantes e hidratação adequada podem ajudar."
+                texto: "Sua pele apresenta características diferentes em regiões distintas. Produtos equilibrantes e hidratação adequada pode ajudar no equilibrio do PH da pele."
             },
 
             normal: {
                 nome: "Pele Normal",
-                texto: "Sua pele parece equilibrada. O foco pode ser manter uma rotina simples com limpeza, hidratação e proteção solar."
+                texto: "Sua pele é equilibrada. O foco pode ser manter uma rotina simples com limpeza leve com os produtos da coleção Skin, hidratação e proteção solar."
             },
 
             sensivel: {
